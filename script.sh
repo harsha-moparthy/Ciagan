@@ -1,5 +1,10 @@
 export CUDA_VISIBLE_DEVICES=0,1
-cd $HOME/harsha/ciagan/source
+cd $HOME/harsha/ciagan/source  # Change the path to the source directory (where the code is present)
+
+# Check and create directories if they do not exist
+for dir in ../frames/0/ ../models ../results ../mydata; do
+    [ ! -d "$dir" ] && mkdir -p "$dir"
+done
 
 # # # Make the video into frames
 python3 video2frames.py --input ../video.mp4 --output ../frames/0/ --width 512 --height 512

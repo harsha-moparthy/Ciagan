@@ -1,14 +1,16 @@
-# CIAGAN: Conditional Identity Anonymization Generative Adversarial Networks
+# CIAGAN: Conditional Identity Anonymization Generative Adversarial Networks for Video
+`Harsha`
  
-Official PyTorch implementation of [CIAGAN Conditional Identity Anonymization Generative Adversarial Networks](http://openaccess.thecvf.com/content_CVPR_2020/papers/Maximov_CIAGAN_Conditional_Identity_Anonymization_Generative_Adversarial_Networks_CVPR_2020_paper.pdf) published at Conference on Computer Vision and Pattern Recognition (CVPR) 2020.
+Official PyTorch implementation of [CIAGAN Conditional Identity Anonymization Generative Adversarial Networks](http://openaccess.thecvf.com/content_CVPR_2020/papers/Maximov_CIAGAN_Conditional_Identity_Anonymization_Generative_Adversarial_Networks_CVPR_2020_paper.pdf) published at Conference on Computer Vision and Pattern Recognition (CVPR) 2020. Implementation for Videos
 
 ## Installation
 
 Please download the code:
 
 To use our code, first download the repository:
+
 ````
-git clone https://github.com/dvl-tum/ciagan.git
+git clone https://github.com/harsha-moparthy/Ciagan.git
 ````
 
 To install the dependencies:
@@ -16,6 +18,18 @@ To install the dependencies:
 ````
 pip install -r requirements.txt
 ````
+
+First run the cleaning step (important)
+````
+bash clean.sh
+````
+
+
+To run the ciagan end to end
+````
+bash script.sh
+````
+
 
 ## Training
 
